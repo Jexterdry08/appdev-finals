@@ -1,0 +1,318 @@
+<!doctypehtml>
+  <html lang=en>
+  <meta charset=UTF-8>
+  <meta content="width=device-width,initial-scale=1" name=viewport>
+  <meta title="Entertainment Industry">
+  <meta
+    content="Unlock the Ultimate Entertainment Experience: Discover the Latest Trends, Exclusive Interviews, and Must-See Reviews! From Blockbuster Revelations to Insider Secrets, Dive into the Pulse of Entertainment!"
+    name=description>
+  <meta
+    content="Trends, Innovations, Adaptations, Digitalization, Revivals, Collaborations, Transformations, Challenges, Fan Engagement, Globalization"
+    name=keywords>
+  <meta content="Jexter Reigner Datu" name=author>
+  <link href=https://fonts.googleapis.com rel=preconnect>
+  <link href=https://fonts.gstatic.com rel=preconnect crossorigin>
+  <link href=https://unpkg.com/leaflet/dist/leaflet.css rel=stylesheet>
+  <script src=https://unpkg.com/leaflet/dist/leaflet.js></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel=stylesheet>
+  <link href=css/style.css rel=stylesheet>
+  <title>Entertainment Industry</title>
+  <link href=https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css rel=stylesheet>
+  <style>
+    .carousel-item {
+      display: none
+    }
+
+    .carousel-item.active {
+      display: block
+    }
+  </style>
+
+  <body class="text-white bg-gray-900">
+    <nav class="bg-black border-gray-700">
+      <div class="flex items-center container justify-between mx-auto p-4"><a class="flex items-center space-x-3"
+          href=#navbar-menu><img alt="News Logo" class="h-16 w-20" src=/images/logo.min.png> <span
+            class="font-semibold text-2xl">News Today!</span> </a><button
+          class="rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden p-2" id=navbar-toggle><svg
+            class="h-6 w-6" fill=none stroke=currentColor viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg>
+            <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap=round stroke-linejoin=round stroke-width=2></path>
+          </svg></button> <button
+          class="rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden p-2 hidden"
+          id=close-toggle><svg class="text-gray-300 hover:text-red-500 h-6 w-6" fill=none stroke=currentColor
+            viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg>
+            <path d="M6 18L18 6M6 6l12 12" stroke-linecap=round stroke-linejoin=round stroke-width=2></path>
+          </svg></button>
+        <div class="md:flex hidden space-x-8" id=navbar-menu><a class="text-gray-300 hover:text-red-500"
+            href=/index.html>Home</a>
+          <div class=relative><button class="text-gray-300 hover:text-red-500 flex focus:outline-none items-center"
+              id=dropdown-button>News <svg class="h-4 ml-1 w-4" fill=none stroke=currentColor viewBox="0 0 24 24"
+                xmlns=http://www.w3.org/2000/svg>
+                <path d="M19 9l-7 7-7-7" stroke-linecap=round stroke-linejoin=round stroke-width=2></path>
+              </svg></button>
+            <div class="rounded-lg bg-gray-800 absolute hidden mt-2 right-0 shadow-lg text-white w-48 z-10"
+              id=dropdown-menu><a class="text-gray-300 py-2 block hover:bg-gray-700 px-4" href="#world news">World
+                News</a> <a class="text-gray-300 py-2 block hover:bg-gray-700 px-4" href="#local news">Local News</a>
+            </div>
+          </div><a class="text-gray-300 hover:text-red-500" href=/pages/company.html>Company</a> <a
+            class="text-gray-300 hover:text-red-500" href=/pages/resources.html>Resources</a> <a
+            class="text-gray-300 hover:text-red-500" href=/pages/contacts.html>Contacts</a>
+        </div>
+      </div>
+    </nav>
+    <section class="py-10 bg-red-600">
+      <div class="container mx-auto text-center">
+        <h1 class="font-bold mb-4 text-5xl">Breaking News: Major Developments Unfolding</h1>
+        <p class=text-xl>Stay updated with the latest headlines and news stories from around the world.
+      </div>
+    </section>
+    <div class=relative>
+      <div class="bg-center bg-cover carousel-item h-96 active"
+        style="background-image:url(https://i.abcnewsfe.com/a/0e73980d-22c3-43ab-8c3c-1ae63bd3001e/wirestory_d4ceba71308ab75b28e128991776b2b5_16x9.jpg?w=992)">
+        <div class="flex items-center bg-gray-900 bg-opacity-50 h-full justify-center">
+          <h2 class="font-bold text-4xl">Armed militants in Dagestan kill priest and police in attacks on churches</h2>
+        </div>
+      </div>
+      <div class="bg-center bg-cover carousel-item h-96"
+        style=background-image:url(https://media.zenfs.com/en/reuters.com/09fe6b449c62d6e8bad6c62c286ff39e)>
+        <div class="flex items-center bg-gray-900 bg-opacity-50 h-full justify-center">
+          <h2 class="font-bold text-4xl">Woman finds priceless 2,000-year-old Mayan vase</h2>
+        </div>
+      </div>
+      <div class="bg-center bg-cover carousel-item h-96"
+        style="background-image:url(https://globalnews.ca/wp-content/uploads/2023/07/20230710040736-64abc39ff28fbedacd57c2e5jpeg-1.jpg?quality=85&strip=all)">
+        <div class="flex items-center bg-gray-900 bg-opacity-50 h-full justify-center">
+          <h2 class="font-bold text-4xl">NATO allies appear to have chosen their next leader ahead of summit</h2>
+        </div>
+      </div><button
+        class="focus:outline-none focus:ring-2 focus:ring-gray-200 p-2 -translate-y-1/2 absolute bg-gray-700 rounded-full text-white top-1/2 transform left-0"
+        id=prev><svg class="h-6 w-6" fill=none stroke=currentColor viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg>
+          <path d="M15 19l-7-7 7-7" stroke-linecap=round stroke-linejoin=round stroke-width=2></path>
+        </svg></button> <button
+        class="focus:outline-none focus:ring-2 focus:ring-gray-200 p-2 -translate-y-1/2 absolute bg-gray-700 rounded-full text-white top-1/2 transform right-0"
+        id=next><svg class="h-6 w-6" fill=none stroke=currentColor viewBox="0 0 24 24" xmlns=http://www.w3.org/2000/svg>
+          <path d="M9 5l7 7-7-7" stroke-linecap=round stroke-linejoin=round stroke-width=2></path>
+        </svg></button>
+    </div>
+    <div class="container mx-auto mt-8">
+      <h1 class="text-red-600 text-3xl font-bold mb-8 text-center" id="world news">Latest News</h1>
+      <div class="gap-8 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
+        <div
+          class="rounded-lg bg-gray-800 shadow-md overflow-hidden duration-300 ease-in-out group hover:-translate-y-1 hover:scale-105 transform transition">
+          <img alt="News Image" class="object-cover h-48 object-center w-full"
+            src=https://gdb.voanews.com/01000000-0aff-0242-98a0-08dc938e82f9_w1080_h608_s.jpg>
+          <div class=p-6>
+            <h2 class="font-semibold text-xl mb-2">What we know so far about U.K. Tories and election gambling
+              allegations</h2>
+            <p class=text-gray-300>U.K. voters head to the poll on July 4th and trouble appears to be mounting for the
+              Conservatives over gambling allegations. Global's Nathaniel Dove explains why candidates and a campaign
+              official are under investigation, how it could affect the election and what the regulations are in Canada.
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-gray-800 shadow-md overflow-hidden duration-300 ease-in-out group hover:-translate-y-1 hover:scale-105 transform transition">
+          <img alt="News Image" class="object-cover h-48 object-center w-full"
+            src="https://globalnews.ca/wp-content/uploads/2024/06/20240619090648-6672e19e2863b2db9eaf554ajpeg_bddf63.jpg?quality=85&strip=all">
+          <div class=p-6>
+            <h2 class="font-semibold text-xl mb-2">Putin floats sending weapons to North Korea, sparking concern from
+              U.S.</h2>
+            <p class=text-gray-300>Putin, Kim Jong Un solidify Russia-North Korea alliance with strongest-ever treaty
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-gray-800 shadow-md overflow-hidden duration-300 ease-in-out group hover:-translate-y-1 hover:scale-105 transform transition">
+          <img alt="News Image" class="object-cover h-48 object-center w-full"
+            src=https://i.cbc.ca/1.7242458.1718980175!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_940/ont-honda-evs-20240425.jpg>
+          <div class=p-6>
+            <h2 class="font-semibold text-xl mb-2">Doug Ford calls for tariffs on Chinese EVs: 'We risk Ontario and
+              Canadian jobs'</h2>
+            <p class=text-gray-300>Most of Canada's top allies have substantially increased subsidies on Chinese
+              electric vehicles as concerns began to mount with both the economic and security prospects of those cars
+              coming to North America. Mackenzie Gray has more from Ottawa on what the potential reaction could be from
+              the Trudeau Liberals.
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto px-4 py-8">
+        <h2 class="font-semibold mb-6 text-3xl text-red-600" id="local news">Latest News from the Philippines and Around
+          the World</h2>
+        <div class="container mx-auto mt-8">
+          <div class="flex flex-wrap">
+            <div class="md:w-3/4 w-full">
+              <div class="flex items-start mb-6"><img alt="News Image" class="object-cover h-32 mr-4 w-32"
+                  src=https://images.gmanews.tv/webpics/2024/06/Vice_President_Sara_Duterte_6-23-24_2024_06_23_18_20_56.jpg>
+                <div>
+                  <h3 class="font-semibold text-xl text-red-400">VP Sara Duterte says she remains 'friendly' with
+                    Marcos; resignation in DepEd's best interest</h3>
+                  <p class=text-gray-300>Vice President Sara Duterte over the weekend said she remains friendly with
+                    President Ferdinand “Bongbong” Marcos Jr., following her resignation as part of the administration's
+                    Cabinet.
+                </div>
+              </div>
+              <div class="flex items-start mb-6"><img alt="News Image" class="object-cover h-32 mr-4 w-32"
+                  src=https://images.gmanews.tv/webpics/2024/06/bongbong_marcos_pasig_river_urban_devt_project_2024_06_23_20_23_07.jpg>
+                <div>
+                  <h3 class="font-semibold text-xl text-red-400">Marcos wants Pasig River development done in three
+                    years</h3>
+                  <p class=text-gray-300>The urban development of the Pasig River focusing on functional improvement and
+                    revitalization of the area is targeted to be completed in three years, President Ferdinand
+                    “Bongbong” Marcos Jr. said on Sunday. advertisement In a speech during the inauguration of the Phase
+                    1C of the Pasig River Urban Development Project (PRUDP), Marcos said the project is set to make the
+                    Pasig River “look and feel” like famous waterways such as the Seine in Paris and the Thames in
+                    London.
+                </div>
+              </div>
+              <div class="flex items-start mb-6"><img alt="News Image" class="object-cover h-32 mr-4 w-32"
+                  src=https://images.gmanews.tv/webpics/2024/06/vice_2024_06_23_11_55_00.jpg>
+                <div>
+                  <h3 class="font-semibold text-xl text-red-400">On Pride Month, Vice Ganda tells Ion Perez: 'I will
+                    always retell our story with pain but with high hopes'</h3>
+                  <p class=text-gray-300>Vice Ganda proudly flexed her husband, Ion Perez, on social media to celebrate
+                    this year's Pride Month. advertisement On Instagram, Vice Ganda posted clips from her previous shows
+                    where she talked about the hardships of being in a gay relationship. "'Yung sa amin, hindi normal
+                    'yung tingin sa amin," the "It's Showtime" host said. "'Pag bakla ka, ang hirap magka jowa. 'Pag
+                    bakla ka, ang hirap ipaniwala sa mga tao na mahal ka ng jowa mo," she added.
+                </div>
+              </div>
+              <div class="flex items-start mb-6"><img alt="News Image" class="object-cover h-32 mr-4 w-32"
+                  src=https://media.philstar.com/images/articles/psmet1-child-kidnaper_2018-03-16_21-08-48.jpg>
+                <div>
+                  <h3 class="font-semibold text-xl text-red-400">2 nabbed for kidnap attempt on 6 kids in Pasig City
+                  </h3>
+                  <p class=text-gray-300>Authorities rescued six minors from an attempted kidnapping by two suspects
+                    along the West Bank Road in Pasig City, Vonne Aquino reported in "24 Oras Weekend" on Sunday.
+                    advertisement Authorities said one victim, a 14-year-old, was lured by a suspect by an offer of milk
+                    tea. The teenager had nine and 11-year-old siblings, said Barangay Rosario Violence Against Women
+                    and Children-Barangay Council on the Protection for Children Desk Officer Janet Galvez. Galvez added
+                    that the suspects also kidnapped five and two-year-old children who were under the care of the
+                    teenager and another 14-year-old teenager who was the victim's friend. According to the National
+                    Capital Region Police Office, the police on Friday night stopped a taxi at a checkpoint when they
+                    saw one of the victims.
+                </div>
+              </div>
+              <div class="flex items-start mb-6"><img alt="News Image" class="object-cover h-32 mr-4 w-32"
+                  src="https://scontent.fmnl8-1.fna.fbcdn.net/v/t39.30808-6/448935863_798134112482828_5370909660191041914_n.jpg?stp=dst-jpg_p526x296&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGtv-zwqKL_VRBIR61gRKJi6zDLc9USOH_rMMtz1RI4f20nuWyfOqwmOzybPplcb8UuCGmrfLHKfhpEaU8Kcijd&_nc_ohc=oE1RP-ysMREQ7kNvgGTombh&_nc_ht=scontent.fmnl8-1.fna&edm=AN6CN6oEAAAA&oh=00_AYDE9E-KGvDNVaECDArePNbPEYnU0wSv0OQFFH8HduqqMw&oe=667E9D84">
+                <div>
+                  <h3 class="font-semibold text-xl text-red-400">PHL athletes arrive in France for training camp ahead
+                    of Paris Olympics</h3>
+                  <p class=text-gray-300>Some of the Filipino athletes who have qualified to the Paris Olympics arrived
+                    in France on Sunday (Philippine time) for their one-month training camp. advertisement The
+                    Philippine Olympic Committee shared the development on its social media page. The delegation left
+                    Manila on early Saturday morning. Athletes who flew to Metz were flag bearers Nesthy Petecio and
+                    Carlo Paalam, fellow boxers Hergie Bacyadan and Aira Villegas, weightlifters Elreen Ando, John
+                    Ceniza, and Vanessa Sarno, and rower Joanie Delgaco.
+                </div>
+              </div>
+            </div>
+            <div class="rounded-lg bg-gray-800 shadow-md md:mt-0 md:w-1/4 mt-8 p-6 w-full">
+              <h3 class="font-semibold text-2xl mb-4 text-red-600">Trending..</h3>
+              <p class=text-gray-300>Philippine's most trending topics
+              <ul class="text-gray-300 list-disc list-inside mt-4">
+                <li><a class="text-red-600 hover:text-red-400"
+                    href=https://newsinfo.inquirer.net/1953781/bamban-mayor-charged-with-human-trafficking>Bamban Mayor
+                    Alice Guo charged with human trafficking</a>
+                <li><a class="text-red-600 hover:text-red-400"
+                    href=https://newsinfo.inquirer.net/1954234/lawmaker-hits-hypocrisy-over-divorce>Lawmaker hits
+                    'hypocrisy' over divorce</a>
+                <li><a class="text-red-600 hover:text-red-400"
+                    href=https://newsinfo.inquirer.net/1954197/pnp-to-roll-out-health-cards-with-p40000-worth-of-coverage-by-july>PNP
+                    to roll out health cards with P40,000 worth of coverage by July</a>
+              </ul>
+            </div>
+            <section class="container mx-auto px-4 py-8">
+              <h3 class="font-semibold mb-6 text-3xl text-center text-white">Our Location</h3>
+              <div class="rounded-lg bg-gray-800 shadow-md overflow-hidden" style=height:400px id=map></div>
+            </section>
+          </div>
+          <footer class="mt-8 bg-black py-8 text-gray-400">
+            <div class="container mx-auto px-4 gap-8 grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 xl:grid-cols-5">
+              <div>
+                <h3 class="font-semibold mb-2 text-gray-200 text-lg">About Us</h3>
+                <p>Welcome to our news article website! As an individual passionate about the dynamic world of
+                  entertainment, I created this platform to share the latest trends, exclusive interviews, and
+                  insightful reviews with fellow enthusiasts. Our mission is to provide readers with engaging and
+                  reliable content that keeps them informed and entertained. Whether you're a fan of blockbuster movies,
+                  cutting-edge music, or the latest in digital innovation, you'll find something here to pique your
+                  interest. Thank you for joining us on this exciting journey through the ever-evolving entertainment
+                  industry!
+              </div>
+              <div>
+                <h3 class="font-semibold mb-2 text-gray-200 text-lg">Quick Links</h3>
+                <ul>
+                  <li><a class=hover:text-red-500 href=/index.html>Home</a>
+                  <li><a class=hover:text-red-500 href=/pages/news.html>News</a>
+                  <li><a class=hover:text-red-500 href=/pages/company.html>Company</a>
+                  <li><a class=hover:text-red-500 href=/pages/resources.html>Resources</a>
+                  <li><a class=hover:text-red-500 href=/pages/contacts.html>Contacts</a>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold mb-2 text-gray-200 text-lg">Contact Us</h3>
+                <p>Pulongsongco Solib, Floridablanca Pampanga<br>Email: jexterdatu08@gmail.com<br>Phone: 09271345673
+              </div>
+              <div>
+                <h3 class="font-semibold mb-2 text-gray-200 text-lg">Newsletter</h3>
+                <form><input
+                    class="text-gray-300 py-2 bg-gray-800 focus:outline-none focus:ring-2 focus:ring-red-500 px-3 rounded-sm w-full"
+                    placeholder="Your Email" type=email> <button
+                    class="focus:outline-none focus:ring-2 text-white bg-red-600 focus:ring-red-500 hover:bg-red-700 mt-2 px-4 py-2 rounded-sm"
+                    type=submit>Subscribe</button></form>
+              </div>
+            </div>
+            <div class="container mx-auto text-center mt-4">
+              <p>© 2024 Jexter Reigner Datu. All rights reserved.
+            </div>
+          </footer>
+          <script src=https://unpkg.com/leaflet/dist/leaflet.js></script>
+          <script>document.addEventListener("DOMContentLoaded", function () { var t = L.map("map").setView([14.9634, 120.5768], 12); L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' }).addTo(t), L.marker([14.9634, 120.5768]).addTo(t).bindPopup("Floridablanca, Pampanga").openPopup() })</script>
+          <script>const prevBtn = document.getElementById('prev');
+            const nextBtn = document.getElementById('next');
+            const carouselItems = document.querySelectorAll('.carousel-item');
+
+            let currentItemIndex = 0;
+
+            function showItem(index) {
+              carouselItems.forEach(item => item.classList.remove('active'));
+              carouselItems[index].classList.add('active');
+            }
+
+            prevBtn.addEventListener('click', () => {
+              currentItemIndex = (currentItemIndex - 1 + carouselItems.length) % carouselItems.length;
+              showItem(currentItemIndex);
+            });
+
+            nextBtn.addEventListener('click', () => {
+              currentItemIndex = (currentItemIndex + 1) % carouselItems.length;
+              showItem(currentItemIndex);
+            });</script>
+          <script>const navbarToggle = document.getElementById('navbar-toggle');
+            const closeToggle = document.getElementById('close-toggle');
+            const navbarMenu = document.getElementById('navbar-menu');
+            const dropdownButton = document.getElementById('dropdown-button');
+            const dropdownMenu = document.getElementById('dropdown-menu');
+
+            navbarToggle.addEventListener('click', () => {
+              navbarToggle.classList.add('hidden');
+              closeToggle.classList.remove('hidden');
+              navbarMenu.classList.remove('hidden');
+            });
+
+            closeToggle.addEventListener('click', () => {
+              closeToggle.classList.add('hidden');
+              navbarToggle.classList.remove('hidden');
+              navbarMenu.classList.add('hidden');
+              dropdownMenu.classList.add('hidden'); // Close dropdown if open
+            });
+
+            dropdownButton.addEventListener('click', () => {
+              dropdownMenu.classList.toggle('hidden');
+            });
+
+            // Close dropdown when clicking outside
+            document.addEventListener('click', function (event) {
+              if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.add('hidden');
+              }
+            });</script>
+  </body>
+
+  </html>
